@@ -1,0 +1,15 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  color: #878787;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/639/original/pexels-dylan-thompson-733533.jpg?1637860598");
+  background-size: 100% 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #878787;
+}
