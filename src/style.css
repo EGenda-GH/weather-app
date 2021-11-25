@@ -10,6 +10,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a {
+.coded-by {
   color: #878787;
+}
+
+.coded-by:hover {
+  color: #6f4d91;
+}
+
+.photo-credit {
+  color: #878787;
+}
+
+.photo-credit:hover {
+  color: #6f4d91;
 }
