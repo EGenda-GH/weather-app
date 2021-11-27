@@ -20,7 +20,7 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Weather</title>
+    <title>WeatherApp</title>
   </head>
   <body>
     <div class="container">
@@ -28,15 +28,15 @@
         <div class="weather-app">
           <div class="row">
             <div class="col-md-4">
+              <img src="" alt="" id="icon" width="150" />
               <ul>
-                <li class="main-icon">🌤</li>
                 <li class="description" id="description"></li>
                 <li>Wind: <span id="wind"></span> km/h</li>
                 <li>Humidity: <span id="humidity"></span>%</li>
               </ul>
             </div>
             <div class="col-md-4">
-              <h1 id="city">Montreal</h1>
+              <h1 id="city"></h1>
               <h2 id="temperature"></h2>
               <span class="units">°C | <a href="#">°F</a></span>
               <ul>
