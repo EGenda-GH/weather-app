@@ -18,6 +18,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather</title>
   </head>
@@ -29,35 +30,31 @@
             <div class="col-md-4">
               <ul>
                 <li class="main-icon">🌤</li>
-                <li>Wind: 17 km/h</li>
-                <li>Humidity: 0%</li>
+                <li class="description" id="description"></li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
               </ul>
             </div>
             <div class="col-md-4">
-              <h1>Montreal</h1>
-              <h2>
-                2<span class="units">°C | <a href="#">°F</a></span>
-              </h2>
+              <h1 id="city">Montreal</h1>
+              <h2 id="temperature"></h2>
+              <span class="units">°C | <a href="#">°F</a></span>
               <ul>
-                <li>Description</li>
-                <li>Updated: Thursday 14:34</li>
+                <li>Feels like: <span id="feels-like"></span></li>
+                <li><small>Updated: Thursday 14:34</small></li>
               </ul>
             </div>
             <div class="col-md-4">FORM</div>
           </div>
         </div>
         <small>
-          <a
-            class="coded-by"
-            href="https://github.com/EGenda-GH/weather-app"
-            target="_blank"
+          <a href="https://github.com/EGenda-GH/weather-app" target="_blank"
             >Open-source code</a
           >
           by Eliana Genda |
         </small>
         <small>
           <a
-            class="photo-by"
             href="https://www.pexels.com/photo/winter-desert-733533/"
             target="_blank"
             >Photo</a

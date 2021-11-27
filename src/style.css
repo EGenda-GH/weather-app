@@ -4,24 +4,29 @@ html {
 }
 
 body {
-  color: #878787;
+  color: #5a5a5a;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/639/original/pexels-dylan-thompson-733533.jpg?1637860598");
   background-size: 100% 100%;
   font-family: "Roboto", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 48px;
+  color: purple;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 h2 {
-  font-size: 54px;
+  color: black;
+  font-size: 56px;
+  display: inline;
 }
 
 ul {
-  margin: 0;
   padding: 0;
+  margin-top: 12px;
 }
 
 li {
@@ -30,8 +35,20 @@ li {
   padding: 0;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
+a {
+  color: #878787;
+}
+
+a:hover {
+  color: purple;
+}
+
 small {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .weather-app-wrapper {
@@ -52,24 +69,16 @@ small {
   font-size: 80px;
 }
 
+.description {
+  color: purple;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
 .units {
+  color: black;
   font-size: 24px;
+  font-weight: 700;
   position: relative;
   top: -21px;
-}
-
-.coded-by {
-  color: #878787;
-}
-
-.coded-by:hover {
-  color: #6f4d91;
-}
-
-.photo-by {
-  color: #878787;
-}
-
-.photo-by:hover {
-  color: #6f4d91;
 }
