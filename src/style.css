@@ -78,3 +78,21 @@ small {
   position: relative;
   top: -21px;
 }
+
+.search-button {
+  margin: 15px 0 0;
+  border: 1px solid #6f4d91;
+  background: #6f4d91;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 24px;
+  border-radius: 5px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.search-button:hover {
+  background-color: purple;
+  border: 1px solid purple;
+}

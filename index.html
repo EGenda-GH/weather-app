@@ -28,7 +28,7 @@
         <div class="weather-app">
           <div class="row">
             <div class="col-md-4">
-              <img src="" alt="" id="icon" width="150" />
+              <img src="" alt="" id="icon" />
               <ul>
                 <li class="description" id="description"></li>
                 <li>Wind: <span id="wind"></span> km/h</li>
@@ -44,7 +44,26 @@
                 <li><small>Updated: </small><small id="date"></small></li>
               </ul>
             </div>
-            <div class="col-md-4">FORM</div>
+
+            <div class="col-md-4">
+              <br />
+              <div class="card">
+                <div class="card-body">
+                  <form id="search-city">
+                    <div class="form-group">
+                      <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Enter city name"
+                        autocomplete="off"
+                        id="city-input"
+                      />
+                    </div>
+                    <input type="submit" class="search-button" value="Search" />
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <small>
