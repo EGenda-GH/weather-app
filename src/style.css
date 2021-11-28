@@ -40,11 +40,13 @@ li:first-letter {
 }
 
 a {
-  color: #878787;
+  color: #bababa;
+  text-decoration: none;
 }
 
 a:hover {
   color: purple;
+  text-decoration: underline;
 }
 
 small {
@@ -72,11 +74,21 @@ small {
 }
 
 .units {
-  color: black;
+  color: #bababa;
   font-size: 24px;
   font-weight: 700;
   position: relative;
   top: -21px;
+}
+
+.active-link {
+  color: black;
+  cursor: default;
+}
+
+.active-link:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .search-button {
@@ -95,4 +107,13 @@ small {
 .search-button:hover {
   background-color: purple;
   border: 1px solid purple;
+}
+
+.footer-link {
+  color: #878787;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: purple;
 }

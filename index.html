@@ -38,7 +38,10 @@
             <div class="col-md-4">
               <h1 id="city"></h1>
               <h2 id="temperature"></h2>
-              <span class="units">°C | <a href="#">°F</a></span>
+              <span class="units"
+                ><a href="#" id="celsius-link" class="active-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
               <ul>
                 <li>Feels like: <span id="feels-like"></span></li>
                 <li><small>Updated: </small><small id="date"></small></li>
@@ -67,7 +70,10 @@
           </div>
         </div>
         <small>
-          <a href="https://github.com/EGenda-GH/weather-app" target="_blank"
+          <a
+            href="https://github.com/EGenda-GH/weather-app"
+            target="_blank"
+            class="footer-link"
             >Open-source code</a
           >
           by Eliana Genda |
@@ -76,6 +82,7 @@
           <a
             href="https://www.pexels.com/photo/winter-desert-733533/"
             target="_blank"
+            class="footer-link"
             >Photo</a
           >
           by Dylan Thompson</small

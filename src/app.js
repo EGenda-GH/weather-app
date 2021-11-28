@@ -31,6 +31,9 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
 
+  celsiusTemperature = response.data.main.temp;
+  celsiusFeelsLikeTemperature = response.data.main.feels_like;
+
   let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -62,7 +65,45 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("São Paulo");
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+
+  celsiusLink.classList.remove("active-link");
+  fahrenheitLink.classList.add("active-link");
+
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+
+  let feelsLikeElement = document.querySelector("#feels-like");
+  feelsLikeElement.innerHTML = Math.round(
+    (celsiusFeelsLikeTemperature * 9) / 5 + 32
+  );
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+
+  celsiusLink.classList.add("active-link");
+  fahrenheitLink.classList.remove("active-link");
+
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+
+  let feelsLikeElement = document.querySelector("#feels-like");
+  feelsLikeElement.innerHTML = Math.round(celsiusFeelsLikeTemperature);
+}
+
+let celsiusTemperature = null;
+let celsiusFeelsLikeTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let form = document.querySelector("#search-city");
 form.addEventListener("submit", handleSubmit);
+
+search("Montreal");
